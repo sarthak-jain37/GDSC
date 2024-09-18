@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    <!-- container that holds the logo, title and the button to return to the task -->
     <div class="bar">
         <div class="logo">
             <img class="img1" src="img1.png" width="50" height="50">
@@ -16,6 +17,7 @@
         <a href="index.html" class="backBttn">Back to Task</a>
     </div>
 
+    <!-- container that hols the submissions and the button to clear it -->
     <div class="sub-container">
         <div class="submissions">
             <h2>Submitted Links:</h3>
@@ -27,7 +29,7 @@
     
 
 <script>
-    function loadSubmissions() {
+    function loadSubmissions() { //this function loads the submissions and displays them as links
         
         let submissions = JSON.parse(localStorage.getItem('submissions')) || [];
 
@@ -47,7 +49,7 @@
         });
     }
 
-    function clearSubmissions(){
+    function clearSubmissions(){ //this function empties the submission field upon the click of the button
         localStorage.removeItem('submissions');
         let submissionsList = document.getElementById('submissionsList');
         submissionsList.innerHTML = '';
