@@ -9,8 +9,8 @@ html, body {
   font-size: 1rem;                     
   line-height: 1.6; 
 }
-
-.bar {
+/* styling the nav bar which contains the logo, title and the button to move between the submissions and the task. */
+.bar { 
   position: fixed;
   top: 0;
   left: 0;
@@ -47,6 +47,8 @@ html, body {
   color: #FFFFFF55;
 }
 
+/* styling the main container that holds the steps */
+
 .slide {
   background-color: #151B23;
   width: 90vw;
@@ -63,6 +65,8 @@ html, body {
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
+
+/* styling the scrollbar for the main container */
 
 .slide::-webkit-scrollbar {
   width: 8px;
@@ -86,6 +90,8 @@ html, body {
   scrollbar-color: #686868 #424242;
 }
 
+/* styling the opening landing slide */
+
 #welcome {
   font-size: 1.2rem;
   text-align: center;
@@ -95,6 +101,7 @@ html, body {
   font-size: 1.35rem;
 }
 
+/* styling the steps */
 .step {
   border: solid #3c444d 1px;
   display: none;
@@ -145,7 +152,7 @@ p.step:hover {
 p.step br {
   margin-bottom: 0.75rem;
 }
-
+ 
 @media (max-width: 768px) {
   p.step {
     font-size: 0.875rem;
@@ -157,6 +164,7 @@ p.step br {
   }
 }
 
+/* styling the buttons for switching between slides */
 .buttons {
   display: flex;
   justify-content: center;
@@ -181,6 +189,7 @@ button.arrow:hover {
   transform: scale(1.2);
 }
 
+/* styling th einput box and submit button */
 .input-container {
   position: relative;
   display: flex;
@@ -235,6 +244,7 @@ button.arrow:hover {
   color: red;
 }
 
+/* styling the submissions container */
 .sub-container {
   background-color: #151B23;
   width: 90vw;
@@ -279,6 +289,7 @@ button.arrow:hover {
   text-decoration: underline;
 }
 
+/* styling the scrollbar for the submissions */
 .submissions::-webkit-scrollbar {
   width: 8px;
 }
@@ -301,6 +312,7 @@ button.arrow:hover {
   scrollbar-color: #686868 #424242;
 }
 
+/* styling the button that takes back to the main page */
 .backBttn {
   padding: 10px 20px;
   margin-right: 25px;
@@ -313,6 +325,348 @@ button.arrow:hover {
   color: #FFFFFF55;
 }
 
+/*  styling the button that clears the submission field  */
+.clearBttn {
+  color: white;
+  background-color: #21a1f1;
+  padding: 0.625rem 1.25rem;
+  margin-left: 0.625rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.clearBttn:hover {
+  background-color: #61dafb;
+}
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  background-color: #0E1117;
+  font-family: 'Poppins', sans-serif;   
+  font-size: 1rem;                     
+  line-height: 1.6; 
+}
+/* styling the nav bar which contains the logo, title and the button to move between the submissions and the task. */
+.bar { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0E1117;
+  color: white;
+  z-index: 1000;
+}
+
+.bar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.bar .title {
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bar .viewBttn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.viewBttn:hover {
+  color: #FFFFFF55;
+}
+
+/* styling the main container that holds the steps */
+
+.slide {
+  background-color: #151B23;
+  width: 90vw;
+  max-width: 900px;
+  min-height: 300px;
+  max-height: 80vh;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* styling the scrollbar for the main container */
+
+.slide::-webkit-scrollbar {
+  width: 8px;
+}
+
+.slide::-webkit-scrollbar-track {
+  background: #686868;
+}
+
+.slide::-webkit-scrollbar-thumb {
+  background: #686868;
+  border-radius: 4px;
+}
+
+.slide::-webkit-scrollbar-thumb:hover {
+  background: #686868;
+}
+
+.slide {
+  scrollbar-width: thin;
+  scrollbar-color: #686868 #424242;
+}
+
+/* styling the opening landing slide */
+
+#welcome {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#welcome strong {
+  font-size: 1.35rem;
+}
+
+/* styling the steps */
+.step {
+  border: solid #3c444d 1px;
+  display: none;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: white;
+  line-height: 1.5;
+  background-color: #151b23;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-height: 200px;  
+  max-height: 200px;  
+  overflow: auto;
+}
+
+.step.active {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+p.step {
+  background-color: #151b23; 
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+p.step strong {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+p.step:hover {
+  background-color: #1e2432;
+  transform: scale(1.01);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+p.step br {
+  margin-bottom: 0.75rem;
+}
+ 
+@media (max-width: 768px) {
+  p.step {
+    font-size: 0.875rem;
+    padding: 0.75rem;
+  }
+
+  p.step strong {
+    font-size: 1.1rem;
+  }
+}
+
+/* styling the buttons for switching between slides */
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+button.arrow {
+  background-color: transparent;
+  margin-top: 0.5rem;
+  border: none;
+  color: #3c444d;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+button.arrow img {
+  width: 25px;
+  height: 25px;
+}
+
+button.arrow:hover {
+  transform: scale(1.2);
+}
+
+/* styling th einput box and submit button */
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.input-container img {
+  width: 50px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#input {
+  background-color: #3c444d;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem; 
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.submit {
+  color: white;
+  background-color: #21a1f1;
+  padding: 0.625rem 1.25rem;
+  margin-left: 0.625rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.submit:hover {
+  background-color: #61dafb;
+}
+
+#message, #warning {
+  display: flex;
+  align-items: center;
+  display: none;
+  margin-top: 0.625rem;
+  color: lightgreen;
+  text-align: center;
+}
+
+#warning {
+  color: red;
+}
+
+/* styling the submissions container */
+.sub-container {
+  background-color: #151B23;
+  width: 90vw;
+  max-width: 900px;
+  min-height: 300px;
+  max-height: 80vh;
+  margin: 100px 20px 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.submissions {
+  border: solid #3c444d 1px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #151b23;
+  color: white;
+  width: 90%;
+  height: 80vh;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-height: 200px;  
+  overflow: auto;
+}
+
+.submissions a {
+  color: white;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.submissions a:hover {
+  text-decoration: underline;
+}
+
+/* styling the scrollbar for the submissions */
+.submissions::-webkit-scrollbar {
+  width: 8px;
+}
+
+.submissions::-webkit-scrollbar-track {
+  background: #686868;
+}
+
+.submissions::-webkit-scrollbar-thumb {
+  background: #686868;
+  border-radius: 4px;
+}
+
+.submissions::-webkit-scrollbar-thumb:hover {
+  background: #686868;
+}
+
+.submissions {
+  scrollbar-width: thin;
+  scrollbar-color: #686868 #424242;
+}
+
+/* styling the button that takes back to the main page */
+.backBttn {
+  padding: 10px 20px;
+  margin-right: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.backBttn:hover {
+  color: #FFFFFF55;
+}
+
+/*  styling the button that clears the submission field  */
 .clearBttn {
   color: white;
   background-color: #21a1f1;
