@@ -22,4 +22,4 @@ Navigation: The two angular brackets(GDSC logo) below the slides are buttons for
 
 Submission: To submit the link to your GitHub Repository, type or paste the link in the input field below the slide and click the "Submit" Button. If you click the button without entering anything, it will give you a warning to enter a link before submitting, otherwise it will say "Submitted". If you go to the Submissions Page you will find the link you entered. 
 
-Clearing the Submissions: You can click the blur "Clear" Button on the Submissions Page to erase the links in the list.
+Clearing the Submissions: You can click the blue "Clear" Button on the Submissions Page to erase the links in the list.
