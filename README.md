@@ -2,7 +2,7 @@
 
 This project is a submission system created as part of a task for the Google Developer Student Club (GDSC) recruitment process. The goal of the project is to demonstrate front-end development skills using HTML, CSS, and JavaScript.
 
-Features: 
+-**Features:**_
 
 User-friendly Interface: A modern, minimalistic design using CSS for styling and animations
 
@@ -10,14 +10,14 @@ Responsive Layout: The page is fully responsive and works on different screen si
 
 Submission System: Users can input text in the submission form. The form supports real-time interaction, although submissions are currently stored only locally.
 
-Technologies Used
+_**Technologies Used**_
 
 HTML5
 CSS3 (with responsive design principles)
 JavaScript (for submission handling)
 
 
-What This Project Includes:
+_**What This Project Includes:**_
 
 _**Page Styling:**_
 
