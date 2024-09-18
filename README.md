@@ -4,7 +4,7 @@ This project is the recruitment task for the Google Developer Student Clubs at S
 
 What This Project Includes:
 
-**Page Styling:**__
+_**Page Styling:**_
 
 The initial page is a basic template that needs to be styled and improved. I used CSS to enhance the design, layout, and user experience.
 
