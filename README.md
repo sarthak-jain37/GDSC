@@ -1,6 +1,21 @@
 **# GDSC Recruitment Task**
 
-This project is the recruitment task for the Google Developer Student Clubs at Shiv Nadar University. The task involves styling a basic instructions page to create a functional and user-friendly website.
+This project is a submission system created as part of a task for the Google Developer Student Club (GDSC) recruitment process. The goal of the project is to demonstrate front-end development skills using HTML, CSS, and JavaScript.
+
+Features: 
+
+User-friendly Interface: A modern, minimalistic design using CSS for styling and animations
+
+Responsive Layout: The page is fully responsive and works on different screen sizes.
+
+Submission System: Users can input text in the submission form. The form supports real-time interaction, although submissions are currently stored only locally.
+
+Technologies Used
+
+HTML5
+CSS3 (with responsive design principles)
+JavaScript (for submission handling)
+
 
 What This Project Includes:
 
