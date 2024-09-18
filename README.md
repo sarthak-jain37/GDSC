@@ -2,7 +2,7 @@
 
 This project is a submission system created as part of a task for the Google Developer Student Club (GDSC) recruitment process. The goal of the project is to demonstrate front-end development skills using HTML, CSS, and JavaScript.
 
--**Features:**_
+_**Features:**_
 
 User-friendly Interface: A modern, minimalistic design using CSS for styling and animations
 
