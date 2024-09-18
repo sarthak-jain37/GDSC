@@ -7,7 +7,8 @@
     <title>GDSC Task</title>
 </head>
 <body>
-    <div class="main-container">
+    <!--a container to hold the steps as mentioned in the task -->
+    <div class="main-container"> 
         <div class="slide">
 
             <p class="step active" id="welcome"> <strong>GDSC SNIoE Dev Team Recruitments</strong> <br>
@@ -37,7 +38,7 @@
                 When you’re ready, push your code to a GitHub repository and share the link along with the URL of your live page. Make sure we can access everything so we can check out your work!</p>
             
 
-        
+        <!--buttons to move between step slides on the page -->
                 <div class="buttons">
                     <button class="arrow left" onclick="prevStep()" aria-label="Previous Step">
                         <img src="left.png" alt="&#10094;">
@@ -48,6 +49,7 @@
                 </div>
         </div>
 
+        <!-- input textbox and submit button -->
         <div class="input-container">
             <img src="github.png" alt="GitHub Icon">
             <input type="text" placeholder="Enter GitHub Repository link" id="input">
@@ -57,7 +59,7 @@
         <p id="warning"></p> 
     </div>
 
-
+        <!-- nav bar that holds the logo, title and the button to view the submissions -->
     <div class="bar">
         <div class="logo">
             <img class="img1" src="img1.png" width="50" height="50">
@@ -70,16 +72,17 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
     <script>
-        let currentStep = 0;
+        let currentStep = 0; 
         const steps = document.getElementsByClassName("step");
       
-        function showStep(n) {
+        function showStep(n) { //displays the current slide
           steps[currentStep].classList.remove("active");
           currentStep = (n + steps.length) % steps.length; 
           steps[currentStep].classList.add("active");
         }
       
-        function nextStep() { 
+        // functions that control the movement from one slide to the other upon button click
+        function nextStep() {
             showStep(currentStep + 1); 
         }
         function prevStep() { 
@@ -89,13 +92,14 @@
       
         steps[currentStep].classList.add("active");
       
+        //function to store the input on button click and print the necessary alert message
         function submitInput() {
             let input = document.getElementById('input');
             let inputValue = input.value;
             let message = document.getElementById('message');
             let warning = document.getElementById('warning');
 
-            message.style.display = 'none';
+            message.style.display = 'none'; //by default the messages are not visible
             warning.style.display = 'none';
 
             console.log('Submit function called');
@@ -104,7 +108,7 @@
             if (inputValue.trim() === '') {
                 warning.textContent = 'Please enter a link before submitting.'; 
                 warning.style.display = 'block';
-                setTimeout(() => {
+                setTimeout(() => { //the messages are available only for 3 seconds after which they again disappear
                     warning.style.display = 'none';
                 }, 3000);
                 return;
@@ -125,9 +129,9 @@
 
             input.value = '';
 
-            loadSubmissions();
+            loadSubmissions(); 
         }
-
+        //function that saves the entered input into local storage
         function saveSubmission(link) {
         
             let submissions = JSON.parse(localStorage.getItem('submissions')) || [];
@@ -136,9 +140,6 @@
 
             localStorage.setItem('submissions', JSON.stringify(submissions));
         }
-
-        
     </script>
-
 </body>
 </html>
